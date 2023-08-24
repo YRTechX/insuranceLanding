@@ -4,6 +4,11 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container{
+    max-width: 1400px;
+    padding: 0 16px;
+    width: 100%;
+}
 .app{
     width: 100vw;
     height: 100vh;
@@ -177,12 +182,12 @@
     border-right: 0.5px solid#5200D9;
 }
 .howToBuy-item{
-    width: 22vw;
-    height: 22vw;
+    width: 19%;
     min-width: 250px;
     min-height: 250px;
-    max-height: 330px;
-    max-width: 330px;
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 15px;
 }
 .item-1{
     background-image: url("images/Frame\ 37.png");
@@ -221,18 +226,23 @@
     display: flex;
     overflow: hidden;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .review-item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
-    width: 330px;
-    height: 270px;
+    width: 19%;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 300px;
+    max-width: 300px;
     background: rgba(82, 0, 217, 0.1);
     border-radius: 5px;
     padding: 15px 20px;
     color: #11002D;
+    margin-bottom: 15px
 
 }
 .ratingAndDate{
@@ -257,7 +267,6 @@
     padding: 5px;
 }
 .howToBuy-wrapper, .reviews-wrapper{
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,9 +342,6 @@ hr{
         margin-bottom: 50px;
     }
     .content-wrapp{
-        width: 60%;
-    }
-    .content-wrapp{
         height: 1450px;
     }
     footer{
@@ -348,9 +354,6 @@ hr{
         width: 100%;
     }
     .navbar-wrapper{
-        width: 95%;
-    }
-    .content-wrapper, .content-wrapp{
         width: 95%;
     }
     .howToBuy-item {
@@ -396,9 +399,6 @@ hr{
         font-weight: 300;
         line-height: 24px;
     }
-    .howToBuy-wrapper, .reviews-wrapper{
-        width: 95%;
-    }
     footer{
         width: 95%;
     }
@@ -424,16 +424,12 @@ hr{
     .howToBuyItems-wrapper{
         height: calc(90vw + 30px)
     }
-    .howToBuy-wrapper, .reviews-wrapper{
-        width: 95%;
-    }
     .app{
         height: 100vh;
         max-height: 900px;
     }
     .content-wrapp{
         height: 1500px;
-        width: 95%;
     }
     .content-wrapp div{
         width: 50%;
@@ -539,7 +535,6 @@ hr{
         margin-top: 30px;
     }
     .content-wrapp{
-        width: 95%;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -586,17 +581,10 @@ hr{
     .app{
         height: 70vh;
     }
-    .howToBuy-wrapper, .reviews-wrapper{
-        width: 95%;
-    }
-    .howToBuy-item{
-        width: 320px;
-        height: 320px;
-        margin-bottom: 15px;
-    }
     .review-item{
-        width: 320px;
-        height: 250px;
+        width: 100%;
+        max-width: none;
+        max-height: none;
         margin-bottom: 15px;
         overflow-x: auto;
     }
@@ -604,13 +592,17 @@ hr{
     .howToBuy-wrapper h2, .reviews-wrapper h2 {
         margin-bottom: 20px;
     }
+    .howToBuy-item{
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        padding-top: 100%;
+    }
     .inputs-wrapper{
         margin-bottom: 0;
     }
     .howToBuyItems-wrapper {
-   
         justify-content: center;
-        
     }
     footer{
         width: 90%;
